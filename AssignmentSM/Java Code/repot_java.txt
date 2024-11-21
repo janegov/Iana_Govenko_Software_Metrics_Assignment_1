@@ -1,0 +1,11 @@
+Report for Java code:
+---------------------
+Total Lines of Code (LOC): 147 (my VSC adds automatically new line in the end of the code because I changed the settings for imroving my python code)
+Physical Lines of Code(PLOC): 132
+Number of Comment Lines: 0
+Number of Blank Lines: 13
+
+Suggestions for Improvement:
+-----------------------
+java.io.IOException and java.io.PrintStream are not used, so we can delete it from the code.
+Addinig the comments would be better for providing the better understanding of the code.

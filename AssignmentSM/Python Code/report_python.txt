@@ -1,0 +1,42 @@
+Report for the Python code:
+------------------------
+I used the code from the QA exam, which was named broken_img.py
+For the test, first of all I used pylint, which showed me that I have
+8.52/10 code and suggestet to improve following errors: missing class docstring,
+missing function or method docstring, missing timeout argument,
+unused import time.
+After that I used flake8 test which showed me next errors: 'time' imported but not used,
+expected 2 blank lines after class or funtion definition, found 1,
+no new line at the end of the code.
+Bandit test showed me that my code is not secure and I have the next issues in my code:
+request_without_timeout, severity: Medium, Confidence: Low, CWE: CWE-400
+Run metrics: medium: 1
+  Total issues: low: 1
+File skipped (0):
+Pygount test showed that I have 28 source code lines
+
+Before Improvement:
+-----------------------
+Total Lines of Code (LOC): 39
+Physical Lines of Code(PLOC): 28
+Number of Comment Lines: 1
+Number of Blank Lines: 6
+
+*On screenshots the name of the file is different because I changed
+the name for better understanding where is the new/old code (before it was named main.py)
+
+-------------------------------------------------------
+
+After the imrovement of my code I had the following result:
+Pylint: 10/10
+Bandit: secure code
+Flake8: no errors're detected
+Pygount: 27 source line in file
+
+After Improvement:
+------------------------
+Total Lines of Code (LOC): 52
+Physical Lines of Code (PLOC): 27
+Number of Comment Lines: 11 (Dedicated comment lines)
+Number of Comment Lines: 13 (Total count of all comments)
+Number of Blank Lines: 10
